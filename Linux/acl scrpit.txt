@@ -1,0 +1,7 @@
+foreach ($item in $directory) {
+    $directory = $(Get-ChildItem 'C:\')  # Store cmd output
+
+# Iterate through each file entry
+foreach ($item in $directory) {
+    Get-Acl $item  # Get the ACL
+}
